@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 USER root
 
-RUN apt-get update; apt-get install -y curl
+RUN apt-get update; apt-get install -y curl apt-transport-https
 
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 
