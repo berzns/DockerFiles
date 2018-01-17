@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 USER root
 
-RUN apt-get update; apt-get install -y curl apt-transport-https
+RUN apt-get update; apt-get install -y curl apt-transport-https apt-utils libunwind8 liblttng-ust0 libcurl3 libssl1.0.0 libuuid1 libkrb5 zlib1g libicu55
 
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 
